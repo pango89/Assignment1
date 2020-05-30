@@ -2,6 +2,7 @@
 {
     public class IndianNumberSystem : INumberToWord
     {
+        // Method to convert number to word
         public string ConvertNumberToWord(int number)
         {
             if (number == 0)
@@ -16,6 +17,7 @@
             return str.Trim();
         }
 
+        // Conversion for Prefix : Number / 1000
         private string Convert1000s(int number)
         {
             string str = "";

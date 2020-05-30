@@ -2,6 +2,7 @@
 {
     public class InternationalNumberSystem : INumberToWord
     {
+        // Method to convert number to word
         public string ConvertNumberToWord(int number)
         {
             if (number == 0)
