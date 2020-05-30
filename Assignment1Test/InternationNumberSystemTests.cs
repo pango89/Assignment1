@@ -65,5 +65,17 @@ namespace Assignment1Test
 
             Assert.AreEqual(expected, actual, false);
         }
+
+        [TestMethod]
+        public void TestBillion()
+        {
+            INumberToWord system = new InternationalNumberSystem();
+            NumberSystem numberSystem = new NumberSystem(system);
+            string expected = "One Billion Five Hundred Twenty Three Million Four Hundred Fifty Six Thousand Seven Hundred Eighty Nine";
+
+            string actual = numberSystem.Convert(1523456789);
+
+            Assert.AreEqual(expected, actual, false);
+        }
     }
 }

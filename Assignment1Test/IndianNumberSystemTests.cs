@@ -55,6 +55,18 @@ namespace Assignment1Test
         }
 
         [TestMethod]
+        public void TestLakh()
+        {
+            INumberToWord system = new IndianNumberSystem();
+            NumberSystem numberSystem = new NumberSystem(system);
+            string expected = "Fifty Five Lakh Fifty Five Thousand Five Hundred Fifty Five";
+
+            string actual = numberSystem.Convert(5555555);
+
+            Assert.AreEqual(expected, actual, false);
+        }
+
+        [TestMethod]
         public void TestCrore()
         {
             INumberToWord system = new IndianNumberSystem();
