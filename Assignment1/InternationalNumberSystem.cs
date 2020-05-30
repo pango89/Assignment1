@@ -3,7 +3,7 @@
     public class InternationalNumberSystem : INumberToWord
     {
         // Method to convert number to word
-        public string ConvertNumberToWord(int number)
+        public string ConvertNumberToWord(long number)
         {
             if (number == 0)
                 return Constants.zero;
@@ -29,7 +29,7 @@
         }
 
         // Utility method to convert upto 999
-        private string Convert100s(int number)
+        private string Convert100s(long number)
         {
             string str = "";
 

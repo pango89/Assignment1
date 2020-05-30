@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Assignment1
+﻿namespace Assignment1
 {
     public class NumberSystem
     {
@@ -13,7 +9,7 @@ namespace Assignment1
             this.NumberToWordConverter = numberToWordConverter;
         }
 
-        public string Convert(int number)
+        public string Convert(long number)
         {
             return this.NumberToWordConverter.ConvertNumberToWord(number);
         }

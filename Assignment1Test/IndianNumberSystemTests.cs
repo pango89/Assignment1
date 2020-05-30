@@ -71,9 +71,9 @@ namespace Assignment1Test
         {
             INumberToWord system = new IndianNumberSystem();
             NumberSystem numberSystem = new NumberSystem(system);
-            string expected = "Two Crore Thirty Four Lakh Fifty Six Thousand Seven Hundred Eighty Nine";
+            string expected = "Fifty Two Crore Thirty Four Lakh Fifty Six Thousand Seven Hundred Eighty Nine";
 
-            string actual = numberSystem.Convert(23456789);
+            string actual = numberSystem.Convert(523456789);
 
             Assert.AreEqual(expected, actual, false);
         }

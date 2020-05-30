@@ -3,7 +3,7 @@
     public class IndianNumberSystem : INumberToWord
     {
         // Method to convert number to word
-        public string ConvertNumberToWord(int number)
+        public string ConvertNumberToWord(long number)
         {
             if (number == 0)
                 return Constants.zero;
@@ -18,7 +18,7 @@
         }
 
         // Conversion for Prefix : Number / 1000
-        private string Convert1000s(int number)
+        private string Convert1000s(long number)
         {
             string str = "";
 
@@ -38,7 +38,7 @@
         }
 
         // Utility method to convert upto 999
-        private string Convert100s(int number)
+        private string Convert100s(long number)
         {
             string str = "";
 
@@ -54,7 +54,7 @@
         }
 
         // Utility method to convert upto 99
-        private string Convert10s(int number)
+        private string Convert10s(long number)
         {
             string str = "";            
 

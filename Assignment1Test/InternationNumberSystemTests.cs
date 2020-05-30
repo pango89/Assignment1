@@ -71,9 +71,9 @@ namespace Assignment1Test
         {
             INumberToWord system = new InternationalNumberSystem();
             NumberSystem numberSystem = new NumberSystem(system);
-            string expected = "One Billion Five Hundred Twenty Three Million Four Hundred Fifty Six Thousand Seven Hundred Eighty Nine";
+            string expected = "One Hundred Two Billion Five Hundred Twenty Three Million Four Hundred Fifty Six Thousand Seven Hundred Eighty Nine";
 
-            string actual = numberSystem.Convert(1523456789);
+            string actual = numberSystem.Convert(102523456789);
 
             Assert.AreEqual(expected, actual, false);
         }
